@@ -121,7 +121,7 @@ class TranslateController extends Controller
             "zu" => "Zulu",
         );
 
-        return view('welcome', compact('languages'));
+        return view('translate', compact('languages'));
     }
 
     public function translate(Request $request){
@@ -142,6 +142,6 @@ class TranslateController extends Controller
 
     	$outputText = $translate->translate($request->inputText);
 
-    	return redirect()->back()->withInput()->with('outputText', $outputText);  ;  
+    	return redirect()->back()->withInput()->with('outputText', $outputText);
     }
 }

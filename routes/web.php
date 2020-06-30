@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'TranslateController@index');
 
 Route::post('/translate', 'TranslateController@translate')->name('translate');
+
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
